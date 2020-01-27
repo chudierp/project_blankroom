@@ -1,10 +1,5 @@
-from flask import Flask
+from templates import app
 
-app = Flask(__name__)
+app.config.from_object('configurations.DevelopmentConfig')
 
-@app.route('/')
-def hello_world():
-    return 'Flask running, working on React connection'
-
-if __name__ == '__main__':
-    app.run()
+app.run()

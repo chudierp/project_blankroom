@@ -13,10 +13,11 @@
                     height: 100%;
                     background-image: url('https://whiteimage.com/assets/shapes.svg');
                     background-repeat: no-repeat;
-                    background-size: cover;
+                    background-size: 2000px;
                     max-width: 100%;
                     height: auto;
                     color: #fff;
+                    background-color: rgb(248, 247, 247);
                     font-family: Helvetica;
                     display: flex;
                     justify-content: b;
@@ -30,6 +31,7 @@
                     position: relative;
                     left: 500px;
                     padding-top: 15em;
+                    transition-duration: 0.4s;
                           
 
                 }
@@ -43,13 +45,18 @@
 
                 }
 
+                button:hover {
+                    background-color: rgb(240, 202, 35);
+                    color: white;
+                }
+
 
             </style>
         </head>
         
         <body>
             <div class="buttons">
-                <button type="button">Login</button>
+                <button type="button"></button>
                 <!-- <button type="button">Sign Up</button> -->
             </div>
         </body>
